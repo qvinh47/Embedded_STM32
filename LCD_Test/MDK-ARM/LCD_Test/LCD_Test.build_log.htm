@@ -1,0 +1,177 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: vinh quang, dang, LIC=ATTQ1-CQFS3-455T5-GFZCH-ISF4E-AUYHB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+D:\STM32_Project\LCD_Test\MDK-ARM\LCD_Test.uvprojx
+Project File Date:  04/08/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'LCD_Test'
+compiling main.c...
+../Core/Inc/liquidcrystal_i2c.h(61): warning:  #1295-D: Deprecated declaration HD44780_Clear - give arg types
+  void HD44780_Clear();
+../Core/Inc/liquidcrystal_i2c.h(62): warning:  #1295-D: Deprecated declaration HD44780_Home - give arg types
+  void HD44780_Home();
+../Core/Inc/liquidcrystal_i2c.h(63): warning:  #1295-D: Deprecated declaration HD44780_NoDisplay - give arg types
+  void HD44780_NoDisplay();
+../Core/Inc/liquidcrystal_i2c.h(64): warning:  #1295-D: Deprecated declaration HD44780_Display - give arg types
+  void HD44780_Display();
+../Core/Inc/liquidcrystal_i2c.h(65): warning:  #1295-D: Deprecated declaration HD44780_NoBlink - give arg types
+  void HD44780_NoBlink();
+../Core/Inc/liquidcrystal_i2c.h(66): warning:  #1295-D: Deprecated declaration HD44780_Blink - give arg types
+  void HD44780_Blink();
+../Core/Inc/liquidcrystal_i2c.h(67): warning:  #1295-D: Deprecated declaration HD44780_NoCursor - give arg types
+  void HD44780_NoCursor();
+../Core/Inc/liquidcrystal_i2c.h(68): warning:  #1295-D: Deprecated declaration HD44780_Cursor - give arg types
+  void HD44780_Cursor();
+../Core/Inc/liquidcrystal_i2c.h(69): warning:  #1295-D: Deprecated declaration HD44780_ScrollDisplayLeft - give arg types
+  void HD44780_ScrollDisplayLeft();
+../Core/Inc/liquidcrystal_i2c.h(70): warning:  #1295-D: Deprecated declaration HD44780_ScrollDisplayRight - give arg types
+  void HD44780_ScrollDisplayRight();
+../Core/Inc/liquidcrystal_i2c.h(71): warning:  #1295-D: Deprecated declaration HD44780_PrintLeft - give arg types
+  void HD44780_PrintLeft();
+../Core/Inc/liquidcrystal_i2c.h(72): warning:  #1295-D: Deprecated declaration HD44780_PrintRight - give arg types
+  void HD44780_PrintRight();
+../Core/Inc/liquidcrystal_i2c.h(73): warning:  #1295-D: Deprecated declaration HD44780_LeftToRight - give arg types
+  void HD44780_LeftToRight();
+../Core/Inc/liquidcrystal_i2c.h(74): warning:  #1295-D: Deprecated declaration HD44780_RightToLeft - give arg types
+  void HD44780_RightToLeft();
+../Core/Inc/liquidcrystal_i2c.h(75): warning:  #1295-D: Deprecated declaration HD44780_ShiftIncrement - give arg types
+  void HD44780_ShiftIncrement();
+../Core/Inc/liquidcrystal_i2c.h(76): warning:  #1295-D: Deprecated declaration HD44780_ShiftDecrement - give arg types
+  void HD44780_ShiftDecrement();
+../Core/Inc/liquidcrystal_i2c.h(77): warning:  #1295-D: Deprecated declaration HD44780_NoBacklight - give arg types
+  void HD44780_NoBacklight();
+../Core/Inc/liquidcrystal_i2c.h(78): warning:  #1295-D: Deprecated declaration HD44780_Backlight - give arg types
+  void HD44780_Backlight();
+../Core/Inc/liquidcrystal_i2c.h(79): warning:  #1295-D: Deprecated declaration HD44780_AutoScroll - give arg types
+  void HD44780_AutoScroll();
+../Core/Inc/liquidcrystal_i2c.h(80): warning:  #1295-D: Deprecated declaration HD44780_NoAutoScroll - give arg types
+  void HD44780_NoAutoScroll();
+../Core/Src/main.c(6): error:  #79: expected a type specifier
+    HD44780_Init(2);
+../Core/Src/main.c(6): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_Init(2);
+../Core/Src/main.c(6): error:  #147: declaration is incompatible with "void HD44780_Init(uint8_t)"  (declared at line 60 of "../Core/Inc/liquidcrystal_i2c.h")
+    HD44780_Init(2);
+../Core/Src/main.c(7): warning:  #1295-D: Deprecated declaration HD44780_Clear - give arg types
+    HD44780_Clear();
+../Core/Src/main.c(7): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_Clear();
+../Core/Src/main.c(7): error:  #147: declaration is incompatible with "void HD44780_Clear()"  (declared at line 61 of "../Core/Inc/liquidcrystal_i2c.h")
+    HD44780_Clear();
+../Core/Src/main.c(8): error:  #79: expected a type specifier
+    HD44780_SetCursor(0,0);
+../Core/Src/main.c(8): error:  #79: expected a type specifier
+    HD44780_SetCursor(0,0);
+../Core/Src/main.c(8): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_SetCursor(0,0);
+../Core/Src/main.c(8): error:  #147: declaration is incompatible with "void HD44780_SetCursor(uint8_t, uint8_t)"  (declared at line 83 of "../Core/Inc/liquidcrystal_i2c.h")
+    HD44780_SetCursor(0,0);
+../Core/Src/main.c(9): error:  #79: expected a type specifier
+    HD44780_PrintStr("HELLO");
+../Core/Src/main.c(9): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_PrintStr("HELLO");
+../Core/Src/main.c(9): error:  #147: declaration is incompatible with "void HD44780_PrintStr(const char *)"  (declared at line 86 of "../Core/Inc/liquidcrystal_i2c.h")
+    HD44780_PrintStr("HELLO");
+../Core/Src/main.c(10): error:  #79: expected a type specifier
+    HD44780_SetCursor(10,1);
+../Core/Src/main.c(10): error:  #79: expected a type specifier
+    HD44780_SetCursor(10,1);
+../Core/Src/main.c(10): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_SetCursor(10,1);
+../Core/Src/main.c(11): error:  #79: expected a type specifier
+    HD44780_PrintStr("WORLD");
+../Core/Src/main.c(11): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_PrintStr("WORLD");
+../Core/Src/main.c(12): error:  #79: expected a type specifier
+    HAL_Delay(2000);
+../Core/Src/main.c(12): error:  #260-D: explicit type is missing ("int" assumed)
+    HAL_Delay(2000);
+../Core/Src/main.c(12): error:  #147: declaration is incompatible with "void HAL_Delay(uint32_t)"  (declared at line 296 of "../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h")
+    HAL_Delay(2000);
+../Core/Src/main.c(14): warning:  #1295-D: Deprecated declaration HD44780_Clear - give arg types
+    HD44780_Clear();
+../Core/Src/main.c(14): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_Clear();
+../Core/Src/main.c(15): error:  #79: expected a type specifier
+    HD44780_SetCursor(0,0);
+../Core/Src/main.c(15): error:  #79: expected a type specifier
+    HD44780_SetCursor(0,0);
+../Core/Src/main.c(15): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_SetCursor(0,0);
+../Core/Src/main.c(16): error:  #79: expected a type specifier
+    HD44780_PrintStr("HELLO");
+../Core/Src/main.c(16): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_PrintStr("HELLO");
+../Core/Src/main.c(17): error:  #79: expected a type specifier
+    HAL_Delay(2000);
+../Core/Src/main.c(17): error:  #260-D: explicit type is missing ("int" assumed)
+    HAL_Delay(2000);
+../Core/Src/main.c(18): warning:  #1295-D: Deprecated declaration HD44780_NoBacklight - give arg types
+    HD44780_NoBacklight();
+../Core/Src/main.c(18): error:  #260-D: explicit type is missing ("int" assumed)
+    HD44780_NoBacklight();
+../Core/Src/main.c(18): error:  #147: declaration is incompatible with "void HD44780_NoBacklight()"  (declared at line 77 of "../Core/Inc/liquidcrystal_i2c.h")
+    HD44780_NoBacklight();
+../Core/Src/main.c: 23 warnings, 30 errors
+"LCD_Test\LCD_Test.axf" - 30 Error(s), 23 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM.CMSIS.6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: GPIO Version: 3.6.0
+   * Component: I2C Version: 3.6.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_LCD_Test
+  C:\Users\Quang Vinh\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include
+  C:\Users\Quang Vinh\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\Include
+  C:\Users\Quang Vinh\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.1\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:6.1.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_gpio.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_gpio.h
+
+   * Component: Keil::Device:StdPeriph Drivers:I2C:3.6.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f10x_i2c.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f10x_i2c.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

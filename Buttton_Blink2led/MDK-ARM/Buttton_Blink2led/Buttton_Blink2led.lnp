@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"buttton_blink2led\startup_stm32f103xb.o"
+"buttton_blink2led\main.o"
+"buttton_blink2led\stm32f1xx_it.o"
+"buttton_blink2led\stm32f1xx_hal_msp.o"
+"buttton_blink2led\stm32f1xx_hal_gpio_ex.o"
+"buttton_blink2led\stm32f1xx_hal.o"
+"buttton_blink2led\stm32f1xx_hal_rcc.o"
+"buttton_blink2led\stm32f1xx_hal_rcc_ex.o"
+"buttton_blink2led\stm32f1xx_hal_gpio.o"
+"buttton_blink2led\stm32f1xx_hal_dma.o"
+"buttton_blink2led\stm32f1xx_hal_cortex.o"
+"buttton_blink2led\stm32f1xx_hal_pwr.o"
+"buttton_blink2led\stm32f1xx_hal_flash.o"
+"buttton_blink2led\stm32f1xx_hal_flash_ex.o"
+"buttton_blink2led\stm32f1xx_hal_exti.o"
+"buttton_blink2led\system_stm32f1xx.o"
+--strict --scatter "Buttton_Blink2led\Buttton_Blink2led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Buttton_Blink2led.map" -o Buttton_Blink2led\Buttton_Blink2led.axf

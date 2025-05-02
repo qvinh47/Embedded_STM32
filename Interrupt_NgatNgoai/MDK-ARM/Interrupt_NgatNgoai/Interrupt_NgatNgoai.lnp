@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"interrupt_ngatngoai\startup_stm32f103xb.o"
+"interrupt_ngatngoai\main.o"
+"interrupt_ngatngoai\stm32f1xx_it.o"
+"interrupt_ngatngoai\stm32f1xx_hal_msp.o"
+"interrupt_ngatngoai\stm32f1xx_hal_gpio_ex.o"
+"interrupt_ngatngoai\stm32f1xx_hal.o"
+"interrupt_ngatngoai\stm32f1xx_hal_rcc.o"
+"interrupt_ngatngoai\stm32f1xx_hal_rcc_ex.o"
+"interrupt_ngatngoai\stm32f1xx_hal_gpio.o"
+"interrupt_ngatngoai\stm32f1xx_hal_dma.o"
+"interrupt_ngatngoai\stm32f1xx_hal_cortex.o"
+"interrupt_ngatngoai\stm32f1xx_hal_pwr.o"
+"interrupt_ngatngoai\stm32f1xx_hal_flash.o"
+"interrupt_ngatngoai\stm32f1xx_hal_flash_ex.o"
+"interrupt_ngatngoai\stm32f1xx_hal_exti.o"
+"interrupt_ngatngoai\system_stm32f1xx.o"
+--strict --scatter "Interrupt_NgatNgoai\Interrupt_NgatNgoai.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Interrupt_NgatNgoai.map" -o Interrupt_NgatNgoai\Interrupt_NgatNgoai.axf

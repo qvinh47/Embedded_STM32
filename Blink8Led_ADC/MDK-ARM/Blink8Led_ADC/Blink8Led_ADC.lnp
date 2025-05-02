@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"blink8led_adc\startup_stm32f103xb.o"
+"blink8led_adc\main.o"
+"blink8led_adc\stm32f1xx_it.o"
+"blink8led_adc\stm32f1xx_hal_msp.o"
+"blink8led_adc\stm32f1xx_hal_gpio_ex.o"
+"blink8led_adc\stm32f1xx_hal_adc.o"
+"blink8led_adc\stm32f1xx_hal_adc_ex.o"
+"blink8led_adc\stm32f1xx_hal.o"
+"blink8led_adc\stm32f1xx_hal_rcc.o"
+"blink8led_adc\stm32f1xx_hal_rcc_ex.o"
+"blink8led_adc\stm32f1xx_hal_gpio.o"
+"blink8led_adc\stm32f1xx_hal_dma.o"
+"blink8led_adc\stm32f1xx_hal_cortex.o"
+"blink8led_adc\stm32f1xx_hal_pwr.o"
+"blink8led_adc\stm32f1xx_hal_flash.o"
+"blink8led_adc\stm32f1xx_hal_flash_ex.o"
+"blink8led_adc\stm32f1xx_hal_exti.o"
+"blink8led_adc\system_stm32f1xx.o"
+--strict --scatter "Blink8Led_ADC\Blink8Led_ADC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Blink8Led_ADC.map" -o Blink8Led_ADC\Blink8Led_ADC.axf
